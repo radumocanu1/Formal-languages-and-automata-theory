@@ -1,6 +1,6 @@
 # Python
 
-  ,,Limbaje automate si automate"
+  ,,Limbaje formale si automate"
 
 
 Cerinta proiect 1:
