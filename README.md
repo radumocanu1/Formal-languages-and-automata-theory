@@ -1,4 +1,4 @@
-# Python
+# Cerinte proiecte
 
   ,,Limbaje formale si automate"
 
