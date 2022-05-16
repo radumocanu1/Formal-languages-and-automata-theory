@@ -1,0 +1,24 @@
+#exemplu fisier de intrare 
+# comentariu
+States:
+    q0, S
+    q1
+    q2
+    q3, F
+    q4
+End
+#comentariu
+Transitions:
+    q0,b,q1
+    q0,a,q1
+    q1,b,q2
+    q2,b,q2
+    q2,c,q4
+    q2,c,q3
+    q3,a,q2
+End
+Sigma:
+    a
+    b
+    c
+End
