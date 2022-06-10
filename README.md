@@ -29,3 +29,8 @@ Implement a library/program (in a programming language
 of your choice) to load and validate a configuration file of a TM with one head
 and two tapes. Also implement a simulator for this type of TM
 
+Cerinta proiect 7:
+
+ Create a configuration file for a one head, two tapes TM
+that recognize the language L = {w#w|where w is a string} and also check for
+the integrity of the tapes (if they are identical).
