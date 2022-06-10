@@ -1,0 +1,82 @@
+# Mocanu Radu, Muscalu Diana, Micu Roberta
+# am modificat putin codul de la ex2 adaugand un "SPACE" la inceputul tape-ului (pt a identifica primul element al acesteia)
+# pozitia initiala de pe care porneste head-ul se modifica, fiind 1 (primul simbol de dupa "SPACE")
+# se citesc cele doua input-uri (tape-uri) si se concateneaza astfel tape1 + tape2, cele doua TM fiind echivalente
+# functia delta verifica daca prima jumatate a tape-ului (adica fostul prim tape) este egala cu cea de-a doua jumatate (adica fostul tape2)
+#comentariu
+#comentariu
+States:
+    q1, s
+    q2
+    q3
+    q4
+    q5
+    q6
+    q7
+    q8
+    q9
+    q10
+    qa, a
+    qr, r
+End
+#comentariu
+Delta:
+    q1, 0 -> q2, x, R
+    q1, 1 -> q2, y, R
+    q1, x -> q5, x, L
+    q1, y-> q5, y, L
+    q2, 0-> q2, 0, R
+    q2, 1 -> q2, 1, R
+    q2, SPACE -> q3, SPACE, L
+    q2, x -> q3, x, L
+    q2, y -> q3,y, L
+    q3, 1 -> q4, y, L
+    q3, 0 -> q4, x, L
+    q4, 0 -> q4, 0, L
+    q4, 1 -> q4, 1, L
+    q4, x -> q1, x, R
+    q4, y -> q1, y, R
+    q5, x -> q5, 0, L
+    q5, y -> q5, 1, L
+    q5, SPACE -> q6, SPACE, R
+    q6, 0 -> q7, x, R
+    q7, #-> q7, #, R
+    q7, 1 -> q7, 1, R
+    q7, 0 -> q7, 0, R
+    q7, x -> q8, #, L
+    q8, # -> q8, #, L
+    q8, 0 -> q8, 0, L
+    q8, 1 -> q8, 1, L
+    q7, y -> qr, y, R
+    q8, x -> q6, x, R
+    q6, 1 -> q9, y, R
+    q9, #-> q9, #, R
+    q9, 1-> q9, 1, R
+    q9, 0-> q9, 0, R
+    q9, y-> q10, #, L
+    q10, 0-> q10, 0, L
+    q10, 1-> q10, 1, L
+    q10, #-> q10, #, L
+    q9, x-> qr, x, R
+    q10, y-> q6, y, R
+    q6, # -> q11, #, R
+    q6, # -> q6, #, R
+    q6, SPACE->qa, SPACE, R
+    q6, x->qr, x, R
+    q6, y->qr, y, R
+    q6, SPACE->qa, SPACE, R
+End
+Sigma:
+    0
+    1
+End
+#com
+#com
+Tape:
+    0
+    1
+    x
+    y
+    SPACE
+    #
+End
