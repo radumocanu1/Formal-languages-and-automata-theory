@@ -23,4 +23,9 @@ For maximum score you  must  build  at  least 10 sub-categorization  filters,  a
 Cerinta proiect 5:
 Create  a  program-readable  format  to  fully  describe  aCon-text Free Grammar.    Your  format  should  differentiate  between  terminals,non-terminals, productions and start point.Implement  a  library/program  in  a  programming  language  of  your  choosing  toload and validate a CFG in the format you created.c f gv a l i d a t i o ne n g i n e . p y    c f gc o n f i gf i l eYou must also include two additional files along with the script:•A READMDE file to describe your format•An example cfgconfigfile input
 
+Cerinta proiect 6:
+
+Implement a library/program (in a programming language
+of your choice) to load and validate a configuration file of a TM with one head
+and two tapes. Also implement a simulator for this type of TM
 
